@@ -39,10 +39,8 @@ public class Heap<T extends Comparable<T>>
         while (currentRootElementIndex < size && leftChildIndex < size && rightChildIndex < size)
         {
             T currentRootElement = heap.get(currentRootElementIndex);
-
             T leftChild = heap.get(leftChildIndex);
             T rightChild = heap.get(rightChildIndex);
-            int possibleRootIndex;
 
             if (leftChild.compareTo(rightChild) > 0)
             {
